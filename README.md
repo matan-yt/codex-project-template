@@ -11,7 +11,8 @@ A clean starting point for new projects.
 5. Draft scope in `docs/project-spec-template.md`.
 6. Review defaults in `docs/stack-defaults.md`.
 7. Add startup/ops steps to `docs/runbook.md`.
-8. Start building app code in a new `src/` folder.
+8. Review Codex workflow in `docs/how-we-build.md`.
+9. Start building app code in a new `src/` folder.
 
 ## First-day checklist
 
@@ -29,4 +30,6 @@ A clean starting point for new projects.
 - `docs/project-spec-template.md` - concise product and scope spec template
 - `docs/stack-defaults.md` - default web stack choices and deployment baseline
 - `docs/runbook.md` - operational notes and run steps
+- `docs/how-we-build.md` - concise Codex + Windows build playbook
 - `scripts/` - automation scripts
+
