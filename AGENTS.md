@@ -17,3 +17,10 @@
 - Explain what changed and why.
 - Run relevant checks before finishing.
 - Update docs when behavior or setup changes.
+
+## Git & delivery
+
+- Default behavior: after each meaningful change, stage, commit, and push.
+- Use conventional commit messages (`feat`, `fix`, `docs`, `chore`).
+- If `git` is not available in the current shell, use the full path: `C:\Program Files\Git\cmd\git.exe`.
+- If push fails due to auth, stop and tell the user what to do (do not loop).
