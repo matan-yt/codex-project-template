@@ -1,5 +1,14 @@
 # AGENTS
 
+## Hebrew / RTL default
+
+- Default behavior: when writing Hebrew, always use RTL-friendly phrasing even without an explicit skill request.
+- Keep Hebrew sentences short and readable.
+- Wrap English technical terms, commands, file names, paths, variables, and code identifiers in backticks.
+- Prefer bullets over dense inline mixed-language text.
+- Avoid markdown tables for mixed Hebrew-English content unless explicitly requested.
+- For command examples, always use fenced code blocks.
+- For file names and paths, always use backticks.
 ## Working style
 
 - Plan first: write a short plan before making changes.
@@ -24,3 +33,4 @@
 - Use conventional commit messages (`feat`, `fix`, `docs`, `chore`).
 - If `git` is not available in the current shell, use the full path: `C:\Program Files\Git\cmd\git.exe`.
 - If push fails due to auth, stop and tell the user what to do (do not loop).
+
