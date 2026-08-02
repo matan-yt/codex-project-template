@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base { * { @apply border-slate-200; } body { @apply bg-slate-50 font-sans text-slate-950 antialiased; } }
+@layer utilities { .hex-grid { background-image: radial-gradient(circle at 1px 1px, rgba(251, 191, 36, .22) 1px, transparent 0); background-size: 18px 18px; } }

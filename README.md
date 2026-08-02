@@ -2,6 +2,15 @@
 
 > Build. Play. Connect.
 
+## Local development
+
+1. Install dependencies with `npm install`.
+2. Copy `.env.example` to `.env.local` and set the two Supabase public values.
+3. In Supabase Auth, create administrator or host users; public registration is intentionally disabled.
+4. Run `npm run dev`, then open `http://localhost:3000`.
+
+Use `npm run lint`, `npm run format:check`, and `npm run build` before shipping. The browser only receives `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`; never expose a service-role key.
+
 HivePlay is a platform for creating and running live interactive team games. Teams use their mobile phones as controllers while an audience follows the action on a shared display, guided by a dedicated host console.
 
 The platform separates reusable content, game configuration, and live gameplay. This makes games configurable, reusable, and scalable rather than tied to a single presentation or event.
