@@ -18,6 +18,7 @@ node_modules/
 dist/
 build/
 coverage/
+.next/
 
 # Python
 __pycache__/
