@@ -1,0 +1,2 @@
+import { CategoryManager } from '@/components/content/category-manager'; import { PageHeader } from '@/components/ui/page-header'; import { getCategories } from '@/lib/content/queries';
+export default async function CategoriesPage() { const categories = await getCategories(); return <div className="space-y-8"><PageHeader title="Categories" description="Organize the reusable question bank." /><CategoryManager categories={categories} /></div>; }

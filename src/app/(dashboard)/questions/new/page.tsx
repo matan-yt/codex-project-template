@@ -1,0 +1,2 @@
+import { QuestionBuilder } from '@/components/content/question-builder'; import { PageHeader } from '@/components/ui/page-header'; import { getCategories, getMedia } from '@/lib/content/queries';
+export default async function NewQuestionPage() { const [categories, media] = await Promise.all([getCategories(), getMedia()]); return <div className="space-y-8"><PageHeader title="New question" description="Build a reusable question for future games." /><QuestionBuilder categories={categories} media={media} /></div>; }

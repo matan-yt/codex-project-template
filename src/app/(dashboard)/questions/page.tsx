@@ -1,0 +1,2 @@
+import { QuestionManager } from '@/components/content/question-manager'; import { PageHeader } from '@/components/ui/page-header'; import { getCategories, getQuestions } from '@/lib/content/queries';
+export default async function QuestionsPage() { const [questions, categories] = await Promise.all([getQuestions(), getCategories()]); return <div className="space-y-8"><PageHeader title="Question library" description="Search, review, and reuse every question in your bank." /><QuestionManager questions={questions} categories={categories} /></div>; }

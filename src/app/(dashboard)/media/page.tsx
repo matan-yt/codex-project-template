@@ -1,0 +1,2 @@
+import { MediaManager } from '@/components/content/media-manager'; import { PageHeader } from '@/components/ui/page-header'; import { getMedia } from '@/lib/content/queries';
+export default async function MediaPage() { const media = await getMedia(); return <div className="space-y-8"><PageHeader title="Media library" description="Upload private image and video assets for questions." /><MediaManager media={media} /></div>; }
